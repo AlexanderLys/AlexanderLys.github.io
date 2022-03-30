@@ -1,0 +1,51 @@
+.anti{margin-left:316px;transition: 1s; background: #7b7b7b; color: white;}
+		.anti:hover{transition: 1s; background: #ffffff; color: black;}
+		.antileftmenu{margin-left: 0px;transition: 1s;}
+		block klick {
+		    position: fixed;
+		    -moz-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		    -webkit-transform: rotate(-90deg);
+		    -o-transform: rotate(-90deg);
+		    transform: rotate(-90deg);
+		    top: 47%;
+		    font-weight: 900;
+		    font-family: monospace;
+		    font-size: 21px;
+		    border: 1px solid #636363;
+		    padding: 10px;
+		    margin-left: -27px;
+		    cursor: pointer;
+		    z-index: 1000000000;
+		    background: white;
+		    transition: 1s;
+		}block klick:hover {
+		    background: #7b7b7b;
+		    color: white;
+		    transition: 1s;
+		}leftmenu {
+		    position: fixed;
+		    display: block;
+		    margin: -62px  0 0 -347px;
+		    height: 101%;
+		    background: white;
+		    width: 300px;
+		    border-right: 1px solid #919191;
+		    z-index: 100;
+		    overflow: auto;
+		    padding: 22px;
+		    transition: 1s;
+		    direction: rtl;
+		    text-align: left;
+		    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 3px 6px rgba(0,0,0,0.22);
+		}
+		leftmenu logo a{
+		    text-align: left;
+		}
+		leftmenu h4 {
+		    border-bottom: 1px solid #dddddd;
+		    padding-bottom: 10px;
+		}
+		h2 {
+		text-align: center;
+		}

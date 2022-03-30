@@ -1,0 +1,185 @@
+/*Всплывашка*/
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: url(img/bg.jpg);
+    z-index: 999;
+    overflow: auto;
+}
+.popup {
+position: absolute;
+top: 50%;
+left: 50%;
+max-width: 1000px;
+border: 1px solid #cecece;
+padding: 50px;
+transform: translate(-50%,-50%);
+background-color: #cecece;
+border-radius: 10px;
+font-family: Roboto, Arial, monospace;
+font-size: 24px;
+}
+.popup h1{
+	font-size: 64px;
+	text-align: center;
+	line-height: 70px;
+	color: #3a3a3a;
+}
+.close {
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(0, 131, 119, 0.9);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    outline: none;
+    padding: 5px 10px;
+    font-family: Roboto, Arial, monospace;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+}
+/* кнопка закрытия при наведении */
+.close:hover {
+    background-color: rgba(252, 20, 0, 0.8);
+}
+/*анимация*/
+/* Effect 3: Slide from the bottom */
+/*.md-effect-3 .md-content {
+	-webkit-transform: translateY(20%);
+	-moz-transform: translateY(20%);
+	-ms-transform: translateY(20%);
+	transform: translateY(20%);
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-show.md-effect-3 .md-content {
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+	opacity: 1;
+}*/
+/*.close:active{
+	animation: opacity 3s linear;
+}*/
+/*окна один*/
+#zatemnenie:target {
+display: block;
+}
+#zatemnenie {
+background: rgba(0, 85, 70, 0.68);
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+display: none;
+z-index: 9999999999;
+}
+/*окно два*/
+#zatemnenie1:target {
+display: block;
+}
+#zatemnenie1 {
+background: rgba(0, 85, 70, 0.68);
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+display: none;
+z-index: 9999999999;
+}
+/*окно три*/
+#zatemnenie2:target {
+display: block;
+}
+#zatemnenie2 {
+background: rgba(0, 85, 70, 0.68);
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+display: none;
+z-index: 9999999999;
+}
+/*окно четыре*/
+#zatemnenie3:target {
+display: block;
+}
+#zatemnenie3 {
+background: rgba(0, 85, 70, 0.68);
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+display: none;
+z-index: 999;
+}
+/*свойства окон*/
+window {
+position: absolute;
+top: 50%;
+left: 50%;
+min-width: 400px;
+min-height: 100px;
+max-height: 900px;
+border: 1px solid #cecece;
+padding: 30px;
+transform: translate(-50%,-50%);
+background-color: #fafafa;
+font-family: Roboto, Arial, monospace;
+font-size: 24px;
+overflow-y: auto;
+border-radius: 30px;
+}
+a.close_window {
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(0, 131, 119, 0.9);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    outline: none;
+    padding: 5px 10px;
+    font-family: Roboto, Arial, monospace;
+    font-size: 16px;
+    font-weight: 700;
+}
+a.close_window:hover {
+    background-color: rgba(252, 20, 0, 0.8);
+}
+
+/*@keyframes opacity{
+	from {opacity: 100%;}
+	50% {opacity: 50%;}
+	to {opacity: 0%;}
+}*/
+
+/*Адаптивность*/
+@media (max-width: 1200px){
+	max-width:970px;
+}
+@media (max-width: 992px){
+	max-width:750px;
+}
+@media (max-width: 767px){
+	max-width:none;
+}
+
+
